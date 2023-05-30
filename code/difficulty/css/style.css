@@ -1,0 +1,40 @@
+header{
+    background-color: #ffffff;
+    width: 100%;/*設定寬度為100%*/
+    height: 100px;/*設定高度為300px*/
+}
+
+.pagetitle{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 50px;
+}
+
+.button{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.btn{
+    font-size: 50px;
+}
+
+.circle{
+    border-radius: 64px;
+
+}
+
+body{
+    background-color: #aee4ff;
+}
+
+header{
+    background-color: #aee4ff;
+    width: 100%;/*設定寬度為100%*/
+    height: 100px;/*設定高度為300px*/
+}
+
+
+
