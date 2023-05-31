@@ -145,6 +145,7 @@ header{
         color: #fff;
     }
 }
+
 .button{
     display: flex;
     justify-content: center; 
@@ -156,7 +157,7 @@ header{
     flex-shrink: 0;
     width: 360px;
     height: 128px;
-    font-size: large;
+    font-size: 50px;
     background-image: linear-gradient(to right bottom, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #9400d3);
 }
 .btn2{
@@ -164,7 +165,7 @@ header{
     flex-shrink: 0;
     width: 360px;
     height: 128px;
-    font-size: large;
+    font-size: 50px;
     background-image: linear-gradient(to top right, #008b8b, #ffff00);
 }
 .btn3{
@@ -172,7 +173,7 @@ header{
     flex-shrink: 0;
     width: 360px;
     height: 128px;
-    font-size: large;
+    font-size: 50px;
     background-image: linear-gradient(to bottom right, #008b8b, #ffff00);   
 }
 .circle{
