@@ -1,0 +1,152 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+*{
+    font-family:微軟正黑體;  
+  }
+.content-left{/*left*/
+    margin-top: -100px;
+    width: 40%;
+    height: 700px;
+    float: left;
+    background-color: #aee4ff;
+}
+.logo{/*logo*/
+    padding-top: 30px;
+    margin-right: -70px;
+    width:500px;
+    height:600px;
+    float: right;
+}
+.content-right{/*right*/
+    float: right;
+    background-color: #aee4ff;
+}
+.content-right-text{/*登入框架*/
+    padding-top: 140px;
+    padding-left: 40px;
+}
+.small-logo{/*small-logo*/
+    width:60px;
+    height:60px;
+    position: absolute;
+    top: 50px;
+    left:115px;
+}
+.login{/*登入表格細節*/
+    width:120px;
+    height:40px;
+    font-size:30px;
+}
+.submit{/*login button*/
+    width: 240px;
+    height: 40px;
+    margin: 10px;
+    border:0;
+    background-color:#6a9cfd;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+}
+.submit:hover{/*login button*/
+    color:#fff;
+    background-color:#345cad;
+    border:2px #345cad solid;
+}
+.b{/*ezcaptcha*/
+    position: absolute;
+    top: 60px;
+    left:180px;
+}
+h5{/*login 文字*/
+    color: #033495;
+    font-size:40px;
+    position: absolute;
+    top: 130px;
+    right:290px;
+}
+h6{/*註冊*/
+    color: #000;
+    font-size:18px;
+    position: absolute;
+    right:220px;
+    margin: 10px;
+    cursor: pointer;
+}
+h6:hover{/*註冊*/
+    color: #545252;
+    font-size:18px;
+    position: absolute;
+    right:220px;
+    margin: 10px;
+    cursor: pointer;
+}
+#username, #password, h3, #fullname,
+#comfirm_password,#username2, #password2{/*輸入格*/
+    width: 230px;
+    height: 30px;
+    margin: 10px;
+    color: #000;
+}
+#container1,#container2{/*login 排版 */
+    margin-top: -130px;
+    margin-right: 20px;
+    padding: 50px;
+    width: 250px;
+    height: 280px;
+    background-color: white;
+    border-radius: 5px;
+    border-top: 10px solid #6a9cfd;
+    box-shadow: 0 0px 70px rgba(0, 0, 0, 0.1);
+}
+#container2{
+    visibility: hidden;   /*剛開始消失*/
+    height: 350px;
+  }
+body{/*本身*/
+    background-color: #aee4ff;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+header{/*選單列*/
+    background-color: #aee4ff;
+    padding-top: 20px;
+    width: 100%;/*設定寬度為100%*/
+    height: 100px;/*設定高度為300px*/
+}
+header a{
+    text-decoration: none; /*不要底線*/
+    color: #033495;
+    font-weight: bold;
+    font-size: 30px;
+}
+header a:hover{
+    color: #6a9cfd;
+}
+header a:active{
+    color: #033495;
+}
+header ul{
+    list-style: none; /*不要項目符號*/
+    float: right;
+}
+header ul li{
+    display: inline; /*橫向*/
+    margin-left: 50px;
+}
+header ul li a{
+    text-decoration: none; /*不要底線*/
+    color: #033495;
+    font-size: 25px;
+}
+header ul li a:hover{
+    text-decoration: none; /*不要底線*/
+    background-color:#033495;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 25px;
+}
+
