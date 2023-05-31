@@ -158,7 +158,7 @@ header{
     width: 360px;
     height: 128px;
     font-size: 50px;
-    background-image: linear-gradient(to right bottom, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #9400d3);
+   
 }
 .btn2{
     margin: 8px auto;
@@ -166,7 +166,6 @@ header{
     width: 360px;
     height: 128px;
     font-size: 50px;
-    background-image: linear-gradient(to top right, #008b8b, #ffff00);
 }
 .btn3{
     margin: 8px auto;
@@ -174,7 +173,7 @@ header{
     width: 360px;
     height: 128px;
     font-size: 50px;
-    background-image: linear-gradient(to bottom right, #008b8b, #ffff00);   
+   
 }
 .circle{
     border-radius: 64px;
