@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #525252;
+    transition: 0.6s;
+}
+
+body.dark{
+    background-color: #fff;
+}
+
+#toggle{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 120px;
+    height: 60px;
+    border-radius: 55px;
+    background-color: rgba(3, 52, 149, 1);
+    cursor: pointer;
+    box-shadow: inset 2px 2px 5px rgba(194,194,194);
+    
+
+}
+
+#toggle .button{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.85);
+    box-shadow: inset -6px -6px 6px 1px lightgray;
+    transition: 0.6s;
+}
+
+#toggle.dark .button{
+    left: 60px;
+    transition: 0.6s;
+}
+
+#toggle.dark{
+    background-color: #000;
+}
