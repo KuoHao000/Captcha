@@ -8,7 +8,7 @@ header{
     display: flex;
     justify-content: center; 
     align-items: center;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 .button{
@@ -18,12 +18,11 @@ header{
 }
 
 .btn{
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .circle{
     border-radius: 64px;
-
 }
 
 body{
