@@ -146,6 +146,7 @@ header{
     }
 }
 .pagetitle{
+    margin-top: 100PX;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -163,7 +164,6 @@ header{
     width: 360px;
     height: 128px;
     font-size: large;
-    background-image: linear-gradient(to right bottom, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #9400d3);
 }
 .btn2{
     margin: 8px auto;
@@ -171,7 +171,8 @@ header{
     width: 360px;
     height: 128px;
     font-size: large;
-    background-image: linear-gradient(to top right, #008b8b, #ffff00);
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 .btn3{
     margin: 8px auto;
@@ -179,9 +180,16 @@ header{
     width: 360px;
     height: 128px;
     font-size: large;
-    background-image: linear-gradient(to bottom right, #008b8b, #ffff00);   
+    opacity: 0.6;
+    cursor: not-allowed;   
 }
 .circle{
     border-radius: 64px;
 
 }
+.btn1:hover {
+    background: rgba(174, 228, 255, 1); /* Green */
+    color: white;
+}
+
+
