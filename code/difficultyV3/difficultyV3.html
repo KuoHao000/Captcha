@@ -1,0 +1,60 @@
+<!doctype html>
+<meta charset="UTF-8">
+<link href="css/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<html>
+
+    <head>
+        <title></title>
+    </head>
+
+        <body>
+            <header>
+                <div class="logo"><img src="EZ LOGO.png" height="60" width="60" ></div>
+                <div class="logo">ezCAPTCHA</div>
+                <div class="group">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li>
+                            <a href="" >Home</a>
+                        </li>
+                        <li>
+                            <a href="" >Features</a>
+                        </li>
+                        <li>
+                            <a href="" >Pricing</a>
+                        </li>
+                        <li>
+                            <a href="" >About</a>
+                        </li>
+                        <li>
+                            <a href="" >Fuck</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="pagetitle">
+                <h1>工人名稱:等級累積/題數</h1>
+            </div>
+    
+            <div class="button">
+                <p>
+                    <input type="button" value="易" name="easy"  class="btn1 circle" img src="photo-63e068b826c61"><br>
+                    <input type="button" value="中" name="mid"  class="btn2 circle"><br>
+                    <input type="button" value="難" name="hard" class="btn3 circle"><br>
+                </p>
+        
+            <script>
+                group = document.querySelector(".group");
+                group.onclick = function(){
+                    navBar = document.querySelector(".nav-bar");
+                    navBar.classList.toggle("active");
+                }
+            </script>

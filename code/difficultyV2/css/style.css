@@ -1,5 +1,5 @@
 header{
-    background-color: #ffffff;
+    background-color: #aee4ff;
     width: 100%;/*設定寬度為100%*/
     height: 100px;/*設定高度為300px*/
 }
@@ -46,14 +46,34 @@ header{
 }
 
 body{
-    background-color: #aee4ff;
-}
+    margin: 0;
+    min-height:100vh ;
+    background-color: #548ecb;
+    background-image: 
+    radial-gradient(closest-side, rgba(174, 228, 255, 1),rgba(174, 228, 255, 0)),
+    radial-gradient(closest-side, rgba(106, 156, 253, 1),rgba(106, 156, 253, 0)),
+    radial-gradient(closest-side, rgb(211, 106, 164),rgba(255, 184, 208, 0)),
+    radial-gradient(closest-side, rgb(230, 182, 224),rgba(254, 229, 225, 0)),
+    radial-gradient(closest-side, rgba(3, 52, 149, 1),rgba(3, 52, 149, 0)) ;
+    
+    background-size: 
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax ;
+   
+    background-position: 
+    -30vmax -30vmax,
+    -80vmax -80vmax,
+    10vmax 10vmax,
+    -60vmax -60vmax,
+    50vmax 50vmax;
+   
+    background-repeat: no-repeat;
+   }
 
-header{
-    background-color: #aee4ff;
-    width: 100%;/*設定寬度為100%*/
-    height: 100px;/*設定高度為300px*/
-}
+
 
 
 
