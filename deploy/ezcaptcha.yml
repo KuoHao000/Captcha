@@ -1,0 +1,41 @@
+---
+version: "3.8"
+services:
+  proxy:
+    build: ./nginx
+    container_name: nginx
+    ports:
+      - "443:443"
+      - "80:80"
+    restart: always
+    networks:
+      test_project:
+        ipv4_address: 10.10.10.10
+    depends_on:
+            - website
+  website:
+    build: ./flask
+    container_name: flask
+    restart: always
+    networks:
+      test_project:
+        ipv4_address: 10.10.10.11
+    depends_on:
+            - db
+  db:
+    image: mysql
+    container_name: db
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    environment:
+      - MYSQL_ROOT_PASSWORD=rocky
+    networks:
+      test_project:
+        ipv4_address: 10.10.10.12
+networks:
+  test_project:
+    ipam:
+      driver: default
+      config:
+        - subnet: "10.10.10.0/24"
+...
