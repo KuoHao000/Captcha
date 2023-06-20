@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css')}}" type="text/css" />
+    <title>ezCaptcha</title>
+    <script src="https://kit.fontawesome.com/947a150fb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="{{ url_for('static', filename='images/EZ LOGO.png') }}" height="60" width="60" ></div>
+    <div class="logo">ezCAPTCHA</div>
+    <div class="group">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+            <a href="" ></a>
+        </li>
+        <li>
+        <li>
+            <a href="" ></a>
+        </li>
+        <li>
+            <a href="/" >首頁</a>
+        </li>
+        
+        <li>
+            <a href="signup" >註冊</a>
+        </li>
+        <li>
+            <a href="" >關於我們</a>
+        </li>
+        <li>
+            <a href="" >登入</a>
+        </li>
+    </ul>
+    </nav>
+</header>
+<script>
+  group = document.querySelector(".group");
+  group.onclick = function(){
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+  }
+  function closeAlert(button) {
+      button.parentElement.remove();
+  }
+
+</script>
+    <h1>登入</h1>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          {% if category == 'error' %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              {{ message }}
+              <button type="button" class="close custom-button" data-dismiss="alert" aria-label="Close" onclick="closeAlert(this)">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          {% else %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              {{ message }}
+              <button type="button" class="close custom-button" data-dismiss="alert" aria-label="Close" onclick="closeAlert(this)">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  <div class="nice">
+    <form method="post">
+        <label for="email">信箱</label>
+        <input type="email" id="email" name="email" placeholder="輸入信箱">
+
+        <label for="password">密碼</label>
+        <input type="password" id="password" name="password" placeholder="輸入密碼">
+
+        <br>
+        <div class="ok">
+        <button type="submit">登入</button>
+        </div>
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+            </ul>
+            </div>
+            <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">常見問題</a></li>
+                <li><a href="mailto:wilson93su@gmail.com">mailto:wilson93su@gmail.com</a></li>
+            </ul>
+            </div>
+            <div class="footer-col">
+                <div class="shit">
+            <h4>follow us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook" style="color: #005eff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: #ff5c5c;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+            </div>
+                </div>
+            <div class="sec ">
+                <h4>評論</h4>
+                <form>
+                  <textarea id="comment" placeholder="留下您的評論"></textarea>
+                  <button type="submit">提交</button>
+                </form>
+            </div>
+        </footer>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 ezcaptcha. All rights reserved.</p>
+</body>
+</html>
