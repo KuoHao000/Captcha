@@ -12,5 +12,3 @@ NTUB IMD _ Student Project-Captcha
 10856033-李國豪
 
 10856047-伍慕君 
-
-10856049-李杰恩
