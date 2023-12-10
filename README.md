@@ -1,5 +1,5 @@
-# Captcha
-NTUB IMD _ Student Project-Captcha
+# EdTrade
+NTUB IMD _ Student Project-EdTrade
 
 執導教授: 陳信宏、王博士
 
